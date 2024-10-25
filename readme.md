@@ -1,5 +1,10 @@
 # Ultimate Nvim
 
+<div style="display: flex; justify-content: space-around;">
+    <img src="imgs/nvim-screen1.png" alt="Descrição da imagem 1" width="400"/>
+    <img src="imgs/nvim-screen2.png" alt="Descrição da imagem 2" width="400"/>
+</div>
+
 ## What is Ultimate Nvim?
 
 Ultimate Nvim is a comprehensive configuration setup for Neovim, designed to provide an optimized and perfect editing experience.
