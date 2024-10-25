@@ -1,4 +1,3 @@
-````markdown
 # Ultimate Nvim
 
 ## What is Ultimate Nvim?
@@ -16,7 +15,6 @@ rm -rf ~/.local/share/nvim/*
 rm -rf ~/.local/state/nvim/*
 rm -rf ~/.config/nvim/*
 ```
-````
 
 Next, install the new configuration:
 
@@ -45,7 +43,3 @@ nvim
 This project is based on the setup guide by [Josean](https://www.josean.com/posts/how-to-setup-neovim-2024). Thank you for the valuable insights!
 
 Feel free to explore and customize it further to suit your needs!
-
-```
-
-```
