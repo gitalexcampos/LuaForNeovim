@@ -75,7 +75,7 @@ nvim
 | `\|`             | Make a Vsplit               |
 | `_`              | Make a Hsplit               |
 | `(Ctrl) + k`     | Move cursor to up window    |
-| `(Ctrl) + j`     | Move cursor to down wind    |
+| `(Ctrl) + j`     | Move cursor to down windows |
 | `(Ctrl) + l`     | Move cursor to left window  |
 | `(Ctrl) + h`     | Move cursor to right window |
 | `(Ctrl) + Up`    | Resize window to up         |
@@ -110,9 +110,9 @@ nvim
 
 ## Git Management
 
-| Shortcut        | Functionality |
-| --------------- | ------------- |
-| `(Espace) + lg` | Open LazyGit  |
+| Shortcut       | Functionality |
+| -------------- | ------------- |
+| `(Espace) + g` | Open LazyGit  |
 
 ## Miscellaneous
 
