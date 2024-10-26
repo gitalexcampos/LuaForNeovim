@@ -1,13 +1,13 @@
-# Ultimate Nvim
+# MyNvim
 
 <div style="display: flex; justify-content: space-around;">
     <img src="imgs/nvim-screen1.png" alt="Descrição da imagem 1" width="400"/>
     <img src="imgs/nvim-screen2.png" alt="Descrição da imagem 2" width="400"/>
 </div>
 
-## What is Ultimate Nvim?
+## What is MyNvim?
 
-Ultimate Nvim is a comprehensive configuration setup for Neovim, designed to provide an optimized and perfect editing experience.
+MyNvim is a comprehensive configuration setup for Neovim, designed to provide an optimized and perfect editing experience.
 
 ## How to Install
 
@@ -59,8 +59,8 @@ nvim
 | Shortcut          | Functionality                  |
 | ----------------- | ------------------------------ |
 | `(Shift) + n`     | Create new tab                 |
-| `(Shift) + Right` | Go to next tab                 |
-| `(Shift) + Left`  | Go to previous tab             |
+| `(Shift) + Right` | Move current tab to right      |
+| `(Shift) + Left`  | Move current tab to left       |
 | `(Shift) + l`     | Go to next tab                 |
 | `(Shift) + h`     | Go to previous tab             |
 | `(Shift) + x`     | Close current tab              |
@@ -74,10 +74,14 @@ nvim
 | `(Ctrl) + x`          | Close current split         |
 | `(Enter) + (Enter)`   | Make a Vsplit               |
 | `(Espace) + (Espace)` | Make a Hsplit               |
-| `(Ctrl) + Up`         | Move cursor to up window    |
-| `(Ctrl) + Down`       | Move cursor to down window  |
-| `(Ctrl) + Left`       | Move cursor to left window  |
-| `(Ctrl) + Right`      | Move cursor to right window |
+| `(Ctrl) + k`          | Move cursor to up window    |
+| `(Ctrl) + j`          | Move cursor to down wind    |
+| `(Ctrl) + l`          | Move cursor to left window  |
+| `(Ctrl) + h`          | Move cursor to right window |
+| `(Ctrl) + Up`         | Resize window to up         |
+| `(Ctrl) + Down`       | Resize windows to down      |
+| `(Ctrl) + Left`       | Resize window to left       |
+| `(Ctrl) + Right`      | Resize window to right      |
 
 ## File Management
 
