@@ -50,8 +50,8 @@ nvim
 | Shortcut       | Functionality      |
 | -------------- | ------------------ |
 | `(Espace) + k` | Increment a number |
-| `(Espace) + j` | Increment a number |
-| `(Espace) + +` | Decrement a number |
+| `(Espace) + j` | Decrement a number |
+| `(Espace) + +` | Increment a number |
 | `(Espace) + -` | Decrement a number |
 
 ## Tab Management
