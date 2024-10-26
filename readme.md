@@ -120,7 +120,31 @@ nvim
 | --------------- | ------------------------- |
 | `(Espace) + sm` | Maximize/minimize a split |
 
-## Acknowledgments
+# Plugins installed
+
+| Plugin                                                                          | Description                                                                              |
+| ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| [alpha-nvim](https://github.com/goolord/alpha-nvim)                             | A dashboard for Neovim that provides a better startup experience.                        |
+| [auto-session](https://github.com/rmagatti/auto-session)                        | Automatically saves and restores your sessions, making workflow seamless.                |
+| [nvim-autopairs](https://github.com/windwp/nvim-autopairs)                      | Automatically closes pairs of characters like brackets and quotes.                       |
+| [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)                   | A buffer line for Neovim that provides an intuitive way to navigate buffers.             |
+| [catppuccin](https://github.com/catppuccin/nvim)                                | A cozy and aesthetic color scheme for Neovim.                                            |
+| [dressing.nvim](https://github.com/stevearc/dressing.nvim)                      | Enhance Neovim's UI for select and input dialogs.                                        |
+| [conform.nvim](https://github.com/stevearc/conform.nvim)                        | A framework for automatic formatting of code in Neovim.                                  |
+| [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) | Adds indentation guides to Neovim to improve code readability.                           |
+| [plenary.nvim](https://github.com/nvim-lua/plenary.nvim)                        | A Lua library for Neovim that provides useful functions and utilities.                   |
+| [lazygit.nvim](https://github.com/kdheepak/lazygit.nvim)                        | Integrates LazyGit with Neovim for an enhanced Git experience.                           |
+| [nvim-lint](https://github.com/mfussenegger/nvim-lint)                          | Provides linting support for various file types in Neovim.                               |
+| [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)                    | A fast and easy-to-configure status line plugin for Neovim.                              |
+| [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)                                 | A completion plugin for Neovim that provides auto-completion features.                   |
+| [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)                     | A file explorer for Neovim that allows easy navigation and management of files.          |
+| [nvim-surround](https://github.com/kylechui/nvim-surround)                      | Easily add, remove, or change surrounding characters in Neovim.                          |
+| [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)              | A fuzzy finder for Neovim that helps you search and filter files and content.            |
+| [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)           | Provides better syntax highlighting and code navigation through tree-sitter integration. |
+| [vim-maximizer](https://github.com/szw/vim-maximizer)                           | Easily maximize and restore windows in Neovim for better workflow.                       |
+| [which-key.nvim](https://github.com/folke/which-key.nvim)                       | Displays available keybindings in a popup to help discover shortcuts.                    |
+
+# Acknowledgments
 
 This project is based on the setup guide by [Josean](https://www.josean.com/posts/how-to-setup-neovim-2024). Thank you for the valuable insights!
 
