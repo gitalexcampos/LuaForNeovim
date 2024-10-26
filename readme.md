@@ -68,20 +68,20 @@ nvim
 
 ## Window Management
 
-| Shortcut              | Functionality               |
-| --------------------- | --------------------------- |
-| `(Ctrl) + =`          | Make splits equal size      |
-| `(Ctrl) + x`          | Close current split         |
-| `(Enter) + (Enter)`   | Make a Vsplit               |
-| `(Espace) + (Espace)` | Make a Hsplit               |
-| `(Ctrl) + k`          | Move cursor to up window    |
-| `(Ctrl) + j`          | Move cursor to down wind    |
-| `(Ctrl) + l`          | Move cursor to left window  |
-| `(Ctrl) + h`          | Move cursor to right window |
-| `(Ctrl) + Up`         | Resize window to up         |
-| `(Ctrl) + Down`       | Resize windows to down      |
-| `(Ctrl) + Left`       | Resize window to left       |
-| `(Ctrl) + Right`      | Resize window to right      |
+| Shortcut         | Functionality               |
+| ---------------- | --------------------------- |
+| `(Ctrl) + =`     | Make splits equal size      |
+| `(Ctrl) + x`     | Close current split         |
+| `\|`             | Make a Vsplit               |
+| `_`              | Make a Hsplit               |
+| `(Ctrl) + k`     | Move cursor to up window    |
+| `(Ctrl) + j`     | Move cursor to down wind    |
+| `(Ctrl) + l`     | Move cursor to left window  |
+| `(Ctrl) + h`     | Move cursor to right window |
+| `(Ctrl) + Up`    | Resize window to up         |
+| `(Ctrl) + Down`  | Resize windows to down      |
+| `(Ctrl) + Left`  | Resize window to left       |
+| `(Ctrl) + Right` | Resize window to right      |
 
 ## File Management
 

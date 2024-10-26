@@ -33,8 +33,8 @@ keymap.set(
 -- window management
 keymap.set("n", "<C-=>", "<C-w>=", { desc = "Make splits equal size", noremap = true, silent = true })
 keymap.set("n", "<C-x>", "<cmd>close<CR>", { desc = "Close current split", noremap = true, silent = true })
-keymap.set("n", "<CR><CR>", ":vsplit<CR>", { desc = "Make a Vsplit", noremap = true, silent = true })
-keymap.set("n", "<Leader><Leader>", ":split<CR>", { desc = "Make a Hsplit", noremap = true, silent = true })
+keymap.set("n", "|", ":vsplit<CR>", { desc = "Make a Vsplit", noremap = true, silent = true })
+keymap.set("n", "_", ":split<CR>", { desc = "Make a Hsplit", noremap = true, silent = true })
 keymap.set("n", "<C-k>", "<C-w>k", { desc = "Move cursor to up window", noremap = true, silent = true })
 keymap.set("n", "<C-j>", "<C-w>j", { desc = "Move cursor to down window", noremap = true, silent = true })
 keymap.set("n", "<C-l>", "<C-w>l", { desc = "Move cursor to right window", noremap = true, silent = true })
