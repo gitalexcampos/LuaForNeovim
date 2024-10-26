@@ -143,6 +143,40 @@ nvim
 | [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)           | Provides better syntax highlighting and code navigation through tree-sitter integration. |
 | [vim-maximizer](https://github.com/szw/vim-maximizer)                           | Easily maximize and restore windows in Neovim for better workflow.                       |
 | [which-key.nvim](https://github.com/folke/which-key.nvim)                       | Displays available keybindings in a popup to help discover shortcuts.                    |
+| [mason.nvim](https://github.com/williamboman/mason.nvim)                        | A package manager for Neovim that simplifies installing and managing external tools.     |
+| [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)                      | Quickstart configurations for the Neovim LSP client.                                     |
+
+# LSPs installed
+
+| LSP                                                                                       | Description                                                                    |
+| ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| [html](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#html)               | Language server for HTML, providing features like validation and autocomplete. |
+| [cssls](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#css)               | Language server for CSS, offering syntax highlighting and intellisense.        |
+| [tailwindcss](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#tailwindcss) | Language server for Tailwind CSS, assisting with utility class suggestions.    |
+| [svelte](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#svelte)           | Language server for Svelte, providing support for Svelte files and features.   |
+| [lua_ls](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#lua)              | Language server for Lua, enabling autocompletion and error checking.           |
+| [graphql](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#graphql)         | Language server for GraphQL, offering schema support and query validation.     |
+| [emmet_ls](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#emmet)          | Language server for Emmet, providing shortcuts for faster HTML and CSS coding. |
+| [prismals](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#prisma)         | Language server for Prisma, enhancing development with database schemas.       |
+| [pyright](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#pyright)         | Language server for Python, offering type checking and other features.         |
+| [clangd](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#clangd)           | Language server for C/C++, providing code completion and navigation.           |
+| [yamlls](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#yaml)             | Language server for YAML, enabling validation and autocomplete for YAML files. |
+| [jsonls](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#json)             | Language server for JSON, offering schema validation and autocompletion.       |
+
+# Listers installed
+
+| Linter                                               | Description                                                                               |
+| ---------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| [prettier](https://github.com/prettier/prettier)     | A code formatter that enforces a consistent style across various languages.               |
+| [stylua](https://github.com/JohnnyMorganz/StyLua)    | A formatter for Lua code, ensuring consistent formatting.                                 |
+| [isort](https://github.com/PyCQA/isort)              | A Python utility for sorting imports in a consistent order.                               |
+| [black](https://github.com/psf/black)                | A popular opinionated Python code formatter that enforces PEP 8 compliance.               |
+| [pylint](https://github.com/PyCQA/pylint)            | A static code analysis tool for Python, providing error checking and code quality checks. |
+| [eslint_d](https://github.com/mantoni/eslint_d.js)   | A fast, extensible linter for JavaScript and TypeScript code, ensuring code quality.      |
+| [cpplint](https://github.com/cpplint/cpplint)        | A linter for C and C++ code, enforcing Google style guidelines.                           |
+| [shellcheck](https://github.com/koalaman/shellcheck) | A linter for shell scripts that provides warnings and suggestions for best practices.     |
+| [yamllint](https://github.com/adrienverge/yamllint)  | A linter for YAML files, checking for syntax errors and best practices.                   |
+| [jsonlint](https://github.com/zaach/jsonlint)        | A linter for JSON files that validates and formats JSON code.                             |
 
 # Acknowledgments
 
