@@ -19,6 +19,7 @@ Before installing, run the following commands to remove any old Neovim configura
 rm -rf ~/.local/share/nvim/*
 rm -rf ~/.local/state/nvim/*
 rm -rf ~/.config/nvim/*
+rm -rf ~/.config/nvim/.*
 ```
 
 Next, install the new configuration:
@@ -26,6 +27,11 @@ Next, install the new configuration:
 ```bash
 cd ~/.config/nvim
 git clone https://github.com/gitalexcampos/ultimate-nvim.git ./
+```
+
+## Install dependencies
+```bash
+sudo pacman -S neovim npm python unzip ttf-nerd-fonts-symbols
 ```
 
 ## Test Your New Neovim Setup
