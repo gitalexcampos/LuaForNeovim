@@ -9,10 +9,6 @@ return {
     vim.g.loaded_netrwPlugin = 1
 
     nvimtree.setup({
-      view = {
-        width = 35,
-        relativenumber = true,
-      },
       commands = {
         system_open = function(state)
           -- TODO: remove deprecated method check after dropping support for neovim v0.9
@@ -58,7 +54,22 @@ return {
             ["URI"] = vim.uri_from_fname(filepath),
           }
         end,
+      },  
+      view = {
+        width = 35,
+        relativenumber = true,
+          mappings = {
+          ["<S-CR>"] = "system_open",
+          ["<Space>"] = false,
+          ["[b"] = "prev_source",
+          ["]b"] = "next_source",
+          O = "system_open",
+          Y = "copy_selector",
+          h = "parent_or_close",
+          l = "child_or_open",
+        },  
       },
+      
       -- change folder arrow icons
       renderer = {
         indent_markers = {
@@ -71,19 +82,6 @@ return {
               arrow_open = "", -- arrow when folder is open
             },
           },
-        },
-      },
-      window = {
-        width = 30,
-        mappings = {
-          ["<S-CR>"] = "system_open",
-          ["<Space>"] = false,
-          ["[b"] = "prev_source",
-          ["]b"] = "next_source",
-          O = "system_open",
-          Y = "copy_selector",
-          h = "parent_or_close",
-          l = "child_or_open",
         },
       },
       -- disable window_picker for
