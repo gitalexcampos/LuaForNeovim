@@ -58,16 +58,6 @@ return {
       view = {
         width = 35,
         relativenumber = true,
-          mappings = {
-          ["<S-CR>"] = "system_open",
-          ["<Space>"] = false,
-          ["[b"] = "prev_source",
-          ["]b"] = "next_source",
-          O = "system_open",
-          Y = "copy_selector",
-          h = "parent_or_close",
-          l = "child_or_open",
-        },  
       },
       
       -- change folder arrow icons
@@ -104,7 +94,7 @@ return {
 
     -- set keymaps
     local keymap = vim.keymap -- for conciseness
-
+    keymap.set("n", "o", api.node.open.edit, opts("Open")) -- toggle file explorer
     keymap.set("n", "<leader>ee", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" }) -- toggle file explorer
     keymap.set("n", "<leader>ef", "<cmd>NvimTreeFindFileToggle<CR>", { desc = "Toggle file explorer on current file" }) -- toggle file explorer on current file
     keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>", { desc = "Collapse file explorer" }) -- collapse file explorer
