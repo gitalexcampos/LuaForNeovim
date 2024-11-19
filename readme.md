@@ -7,7 +7,7 @@
 
 ## What is MyNvim?
 
-MyNvim is a comprehensive configuration setup for Neovim, designed to provide an optimized and perfect editing experience.
+MyNvim is a comprehensive and simple configuration setup for Neovim, designed to provide an optimized and perfect editing experience.
 
 ## How to Install
 
@@ -20,19 +20,21 @@ rm -rf ~/.local/share/nvim/*
 rm -rf ~/.local/state/nvim/*
 rm -rf ~/.config/nvim/*
 rm -rf ~/.config/nvim/.*
+mkdir ~/.config/nvim
 ```
 
 Next, install the new configuration:
 
 ```bash
 cd ~/.config/nvim
-git clone https://github.com/gitalexcampos/ultimate-nvim.git ./
+git clone https://github.com/gitalexcampos/MyNvim.git ./
 ```
 
 ## Install dependencies
 ```bash
 sudo pacman -S neovim npm python unzip ttf-nerd-fonts-symbols
 ```
+If you use NixOs, check out my [Dotfiles](https://github.com/gitalexcampos/Dotfiles) for Nixos. 
 
 ## Test Your New Neovim Setup
 
@@ -102,10 +104,7 @@ nvim
 
 | Shortcut        | Functionality                        |
 | --------------- | ------------------------------------ |
-| `(Espace) + ee` | Toggle file explorer                 |
-| `(Espace) + ef` | Toggle file explorer on current file |
-| `(Espace) + ec` | Collapse file explorer               |
-| `(Espace) + er` | Refresh file explorer                |
+| `(Espace) + e` | Toggle file explorer                 |
 
 ## Session Management
 

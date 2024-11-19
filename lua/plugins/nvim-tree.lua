@@ -49,7 +49,23 @@ return {
     -- set keymaps
     local api = require("nvim-tree.api")
     local keymap = vim.keymap -- for conciseness
-    keymap.set("n", "l", api.node.open.edit,{ desc = "Open file" }) -- toggle file explorer
+
+    local function is_in_file_tree()
+      local bufnr = vim.api.nvim_get_current_buf()
+      local bufname = vim.api.nvim_buf_get_name(bufnr)
+  
+      return bufname:match("NvimTree[^/]*$") ~= nil
+    end
+
+    keymap.set("n", "l", function()
+     if is_in_file_tree() then
+       api.node.open.edit()
+     else
+       vim.cmd("normal! l")
+     end
+    end, { desc = "Open file in Nvimtree" })
+
+   -- keymap.set("n", "l", api.node.open.edit,{ desc = "Open file" }) -- toggle file explorer
     keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" }) -- toggle file explorer
     --keymap.set("n", "<leader>ef", "<cmd>NvimTreeFindFileToggle<CR>", { desc = "Toggle file explorer on current file" }) -- toggle file explorer on current file
     --keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>", { desc = "Collapse file explorer" }) -- collapse file explorer
