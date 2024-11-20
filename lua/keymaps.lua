@@ -53,3 +53,21 @@ keymap.set(
 	":vertical resize +2<CR>",
 	{ desc = "Increase current window width size", noremap = true, silent = true }
 )
+keymap.set(
+	"n",
+	"<leader>tf",
+	"<cmd>ToggleTerm direction=float<cr>",
+	{ desc = "Float Terminal", noremap = true, silent = true }
+)
+keymap.set(
+	"n",
+	"<leader>tv",
+	"<cmd>ToggleTerm size=80 direction=vertical<cr>",
+	{ desc = "Vertical Terminal", noremap = true, silent = true }
+)
+keymap.set(
+	"n",
+	"<leader>tt",
+	"<cmd>ToggleTerm size=10 direction=horizontal<cr>",
+	{ desc = "Horizontal Terminal", noremap = true, silent = true }
+)

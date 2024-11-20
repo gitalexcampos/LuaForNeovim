@@ -22,6 +22,13 @@ return {
 
 		local lspkind = require("lspkind")
 
+		local source_mapping = {
+			buffer = "◉ Buffer",
+			nvim_lsp = " LSP",
+			path = "󰴠 Path",
+			luasnip = " LuaSnip",
+		}
+
 		-- loads vscode style snippets from installed plugins (e.g. friendly-snippets)
 		require("luasnip.loaders.from_vscode").lazy_load()
 
@@ -43,6 +50,7 @@ return {
 				["<A-e>"] = cmp.mapping.abort(), -- close completion window
 				["<CR>"] = cmp.mapping.confirm({ select = false }),
 			}),
+
 			-- sources for autocompletion
 			sources = cmp.config.sources({
 				{ name = "nvim_lsp" },
@@ -53,10 +61,18 @@ return {
 
 			-- configure lspkind for vs-code like pictograms in completion menu
 			formatting = {
-				format = lspkind.cmp_format({
-					maxwidth = 50,
-					ellipsis_char = "...",
-				}),
+				format = function(entry, vim_item)
+					vim_item.kind = lspkind.presets.default[vim_item.kind]
+					local menu = source_mapping[entry.source.name]
+					if entry.source.name == "cmp_tabnine" then
+						if entry.completion_item.data ~= nil and entry.completion_item.data.detail ~= nil then
+							menu = entry.completion_item.data.detail .. " " .. menu
+						end
+						vim_item.kind = ""
+					end
+					vim_item.menu = menu
+					return vim_item
+				end,
 			},
 		})
 	end,
