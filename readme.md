@@ -32,7 +32,7 @@ git clone https://github.com/gitalexcampos/MyNvim.git ./
 
 ## Install dependencies
 ```bash
-sudo pacman -S neovim npm python unzip ttf-nerd-fonts-symbols
+sudo pacman -S neovim npm python unzip ttf-nerd-fonts-symbols ripgrep
 ```
 If you use NixOs, check out my [Dotfiles](https://github.com/gitalexcampos/Dotfiles) for Nixos. 
 
