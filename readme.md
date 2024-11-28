@@ -31,10 +31,12 @@ git clone https://github.com/gitalexcampos/MyNvim.git ./
 ```
 
 ## Install dependencies
+
 ```bash
 sudo pacman -S neovim npm python unzip ttf-nerd-fonts-symbols ripgrep
 ```
-If you use NixOs, check out my [Dotfiles](https://github.com/gitalexcampos/Dotfiles) for Nixos. 
+
+If you use NixOs, check out my [Dotfiles](https://github.com/gitalexcampos/Dotfiles) for Nixos.
 
 ## Test Your New Neovim Setup
 
@@ -102,9 +104,9 @@ nvim
 
 ## File Explorer Management Tree
 
-| Shortcut        | Functionality                        |
-| --------------- | ------------------------------------ |
-| `(Espace) + e` | Toggle file explorer                 |
+| Shortcut       | Functionality        |
+| -------------- | -------------------- |
+| `(Espace) + e` | Toggle file explorer |
 
 ## Session Management
 
@@ -124,6 +126,12 @@ nvim
 | Shortcut        | Functionality             |
 | --------------- | ------------------------- |
 | `(Espace) + sm` | Maximize/minimize a split |
+
+## Copy Selection
+
+| Shortcut   | Functionality  |
+| ---------- | -------------- |
+| `CTRL + c` | Copy selection |
 
 # Plugins installed
 

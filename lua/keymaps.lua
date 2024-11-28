@@ -71,3 +71,15 @@ keymap.set(
 	"<cmd>ToggleTerm size=10 direction=horizontal<cr>",
 	{ desc = "Horizontal Terminal", noremap = true, silent = true }
 )
+keymap.set(
+	"v",
+	"<leader>y",
+	'"+y',
+	{ desc = "Copia seleção para área de transferência", noremap = true, silent = true }
+)
+keymap.set(
+	"v",
+	"<C-c>",
+	'"+y',
+	{ desc = "Copia a seleção para área de transferência", noremap = true, silent = true }
+)
