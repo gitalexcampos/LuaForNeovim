@@ -38,6 +38,7 @@ return {
 				"clangd",
 				"yamlls",
 				"jsonls",
+				"rust_analyzer",
 			},
 		})
 
@@ -53,6 +54,7 @@ return {
 				"shellcheck", -- shell linter
 				"yamllint", --yam linter
 				"jsonlint", --json linter
+				"rustfmt",
 			},
 		})
 	end,
