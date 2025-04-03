@@ -32,9 +32,19 @@ git clone https://github.com/gitalexcampos/MyNvim.git ./
 
 ## Install dependencies
 
+### Arch
+
 ```bash
 sudo pacman -S neovim npm python unzip ttf-nerd-fonts-symbols ripgrep
 ```
+
+### Ubuntu
+
+```bash
+sudo apt-get install neovim npm python unzip python3-venv ripgrep
+```
+In Ubuntu you need to install symbol nerd font manually
+
 
 If you use NixOs, check out my [Dotfiles](https://github.com/gitalexcampos/Dotfiles) for Nixos.
 
