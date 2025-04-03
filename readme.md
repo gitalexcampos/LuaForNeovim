@@ -1,4 +1,4 @@
-# MyNvim
+# Simple Neovim Configuration
 
 <div style="display: flex; justify-content: space-around;">
     <img src="imgs/nvim-screen1.png" alt="Descrição da imagem 1" width="400"/>
