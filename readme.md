@@ -1,13 +1,13 @@
-# Simple Neovim Configuration
+# Simple Lua Neovim
 
 <div style="display: flex; justify-content: space-around;">
     <img src="imgs/nvim-screen1.png" alt="Descrição da imagem 1" width="400"/>
     <img src="imgs/nvim-screen2.png" alt="Descrição da imagem 2" width="400"/>
 </div>
 
-## What is MyNvim?
+## What is Simple Lua Neovim?
 
-MyNvim is a comprehensive and simple configuration setup for Neovim, designed to provide an optimized and perfect editing experience.
+MyNvim is a comprehensive and simple configuration setup for Lua programming in Neovim, designed to provide an optimized and perfect editing experience. It comes with a built-in debugger specifically for the Lua language, making it everything you need to program in Lua within Neovim.
 
 ## How to Install
 
@@ -20,14 +20,14 @@ rm -rf ~/.local/share/nvim/*
 rm -rf ~/.local/state/nvim/*
 rm -rf ~/.config/nvim/*
 rm -rf ~/.config/nvim/.*
-mkdir ~/.config/nvim
+mkdir -p ~/.config/nvim
 ```
 
 Next, install the new configuration:
 
 ```bash
 cd ~/.config/nvim
-git clone https://github.com/gitalexcampos/MyNvim.git ./
+git clone https://github.com/gitalexcampos/simpleluaneovim.git ./
 ```
 
 ## Install dependencies
@@ -44,6 +44,16 @@ sudo pacman -S neovim npm python unzip ttf-nerd-fonts-symbols ripgrep
 sudo apt-get install neovim npm python unzip python3-venv ripgrep
 ```
 In Ubuntu you need to install symbol nerd font manually
+
+### Macos
+
+```bash
+brew -S neovim npm python unzip ripgrep
+```
+
+### Windows
+
+Use wsl2 with ubuntu or arch linux.
 
 
 If you use NixOs, check out my [Dotfiles](https://github.com/gitalexcampos/Dotfiles) for Nixos.
@@ -143,6 +153,17 @@ nvim
 | ---------- | -------------- |
 | `CTRL + c` | Copy selection |
 
+## Debug
+
+| Shortcut       | Functionality              |
+| -------------- | -------------------------- |
+| `(Espace) + n` | Create or erase breakpoint |
+| `F5`           | Start Debugging            |
+| `F10`          | Step Over                  |
+| `F11`          | Step Into                  |
+| `F12`          | Step Out                   |
+
+
 # Plugins installed
 
 | Plugin                                                                          | Description                                                                              |
@@ -168,6 +189,9 @@ nvim
 | [which-key.nvim](https://github.com/folke/which-key.nvim)                       | Displays available keybindings in a popup to help discover shortcuts.                    |
 | [mason.nvim](https://github.com/williamboman/mason.nvim)                        | A package manager for Neovim that simplifies installing and managing external tools.     |
 | [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)                      | Quickstart configurations for the Neovim LSP client.                                     |
+| [nvim-dap](https://github.com/mfussenegger/nvim-dap)                            | Debug Adapter Protocol                                                                   |
+| [Local Lua Debugger](https://github.com/tomblind/local-lua-debugger-vscode)     | Debug Adapter ProtocolA simple Lua debugger which requires no additional dependencies.   |
+
 
 # LSPs installed
 
@@ -175,12 +199,8 @@ nvim
 | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
 | [html](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#html)               | Language server for HTML, providing features like validation and autocomplete. |
 | [cssls](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#css)               | Language server for CSS, offering syntax highlighting and intellisense.        |
-| [tailwindcss](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#tailwindcss) | Language server for Tailwind CSS, assisting with utility class suggestions.    |
-| [svelte](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#svelte)           | Language server for Svelte, providing support for Svelte files and features.   |
 | [lua_ls](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#lua)              | Language server for Lua, enabling autocompletion and error checking.           |
 | [graphql](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#graphql)         | Language server for GraphQL, offering schema support and query validation.     |
-| [emmet_ls](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#emmet)          | Language server for Emmet, providing shortcuts for faster HTML and CSS coding. |
-| [prismals](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#prisma)         | Language server for Prisma, enhancing development with database schemas.       |
 | [pyright](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#pyright)         | Language server for Python, offering type checking and other features.         |
 | [clangd](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#clangd)           | Language server for C/C++, providing code completion and navigation.           |
 | [yamlls](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#yaml)             | Language server for YAML, enabling validation and autocomplete for YAML files. |
