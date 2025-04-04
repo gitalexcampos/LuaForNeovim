@@ -28,17 +28,13 @@ return {
 			ensure_installed = {
 				"html",
 				"cssls",
-				"tailwindcss",
-				"svelte",
 				"lua_ls",
 				"graphql",
 				"emmet_ls",
-				"prismals",
 				"pyright",
 				"clangd",
 				"yamlls",
 				"jsonls",
-				"rust_analyzer",
 			},
 		})
 
@@ -54,7 +50,6 @@ return {
 				"shellcheck", -- shell linter
 				"yamllint", --yam linter
 				"jsonlint", --json linter
-				"rustfmt",
 			},
 		})
 	end,

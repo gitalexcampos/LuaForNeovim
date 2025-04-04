@@ -129,6 +129,9 @@ return {
 					capabilities = capabilities,
 					settings = {
 						Lua = {
+              runtime = {
+                version = "LuaJit",
+              },
 							-- make the language server recognize "vim" global
 							diagnostics = {
 								globals = { "vim" },
