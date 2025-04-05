@@ -1,11 +1,11 @@
-# Simple Lua Neovim
+# Lua for Neovim
 
 <div style="display: flex; justify-content: space-around;">
     <img src="imgs/nvim-screen1.png" alt="Descrição da imagem 1" width="400"/>
     <img src="imgs/nvim-screen2.png" alt="Descrição da imagem 2" width="400"/>
 </div>
 
-## What is Simple Lua Neovim?
+## What is Lua for Neovim?
 
 MyNvim is a comprehensive and simple configuration setup for Lua programming in Neovim, designed to provide an optimized and perfect editing experience. It comes with a built-in debugger specifically for the Lua language, making it everything you need to program in Lua within Neovim.
 
