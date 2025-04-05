@@ -11,7 +11,7 @@ MyNvim is a comprehensive and simple configuration setup for Lua programming in 
 
 ## How to Install
 
-### Linux
+### Linux and Macos
 
 Before installing, run the following commands to remove any old Neovim configurations:
 
