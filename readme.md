@@ -27,7 +27,7 @@ Next, install the new configuration:
 
 ```bash
 cd ~/.config/nvim
-git clone https://github.com/gitalexcampos/simpleluaneovim.git ./
+git clone https://github.com/gitalexcampos/luaforneovim.git ./
 ```
 
 ## Install dependencies
